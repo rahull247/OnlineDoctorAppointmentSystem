@@ -1,0 +1,9 @@
+F:\Source Code\Visual_Studio\DocOnline\DocOnline\bin\DocOnline.dll
+F:\Source Code\Visual_Studio\DocOnline\DocOnline\bin\DocOnline.pdb
+F:\Source Code\Visual_Studio\DocOnline\DocOnline\obj\Debug\DocOnline.dll
+F:\Source Code\Visual_Studio\DocOnline\DocOnline\obj\Debug\DocOnline.pdb
+F:\Source Code\DocOnline\DocOnline\bin\DocOnline.dll
+F:\Source Code\DocOnline\DocOnline\bin\DocOnline.pdb
+F:\Source Code\DocOnline\DocOnline\obj\Debug\DocOnline.dll
+F:\Source Code\DocOnline\DocOnline\obj\Debug\DocOnline.pdb
+F:\Source Code\Visual_Studio\DocOnline\DocOnline\obj\Debug\DocOnline.csprojResolveAssemblyReference.cache

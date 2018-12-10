@@ -1,0 +1,130 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AddDocMaster.master.cs" Inherits="DocOnline.AddDocMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        
+        .style1
+        {
+            width: 1920px;
+            height: 680px;
+        }
+        .divForText
+        {
+            position:absolute;
+        }
+        .footer
+        {
+            position:relative;
+            background:#6F6F6F;
+            height:52px;
+            width:1326px;
+            background: #414e56;
+            
+            color: #b8c9d3;
+            top: 93px;
+            left: 0px;
+            border-style:outset;
+        }
+        .footer a
+        {   
+            margin-top:50px; 
+            color:#FEFBFB;
+        }
+        
+        
+        #form1
+        {
+            height: 371px;
+            width: 1355px;
+        }
+ .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 90px;
+}
+
+.sidenav a {
+    padding: 20px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+    <form id="form1" runat="server">
+  
+    <div id="Header">
+     <div id="div1" class="divForText">
+       <a href="Index.aspx"> <asp:Image ID="Image2" runat="server" Height="113px" 
+            ImageUrl="~/Images/Logo.png" style="margin-left:50px; margin-top:50px" Width="137px" />
+       </a>
+    </div>
+    </div>
+   
+    <asp:Image ID="Image1" runat="server" Height="386px" 
+        ImageUrl="~/Images/Slide2.jpg" Width="1326px" BorderColor="#3399FF" 
+        BorderStyle="Outset" style="margin-left:7px"/>
+        
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="AdminDashboard.aspx">Back To DashBoard</a>
+  <a href="AdminAddDashboard.aspx">Add Admin</a>
+  <a href="AddDocDashboard.aspx">Add Doctor</a>
+  <a href="AdminLogin.aspx">Logout</a>
+  </div>
+ <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Navigation</span>
+ <script>
+     function openNav() {
+         document.getElementById("mySidenav").style.width = "250px";
+     }
+
+     function closeNav() {
+         document.getElementById("mySidenav").style.width = "0";
+     }
+</script>
+
+        <div><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder></div>
+     <div class="footer">
+     <center>
+        <a href="Aboutus.aspx">About Us</a> &nbsp;<a href="Contact_Us.aspx">Contact Us</a>
+     </center>  
+     </div>
+    </form>
+</body>
+</html>
+

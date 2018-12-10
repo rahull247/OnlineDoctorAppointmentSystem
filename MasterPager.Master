@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPager.Master.cs" Inherits="DocOnline.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        
+        .style1
+        {
+            width: 1920px;
+            height: 680px;
+        }
+        .divForText
+        {
+            position:absolute;
+        }
+        .footer
+        {
+            position:relative;
+            background:#6F6F6F;
+            height:52px;
+            width:1326px;
+            background: #414e56;
+            
+            color: #b8c9d3;
+            top: 93px;
+            left: 0px;
+            border-style:outset;
+        }
+        .footer a
+        {   
+            margin-top:50px; 
+            color:#FEFBFB;
+        }
+        
+        
+        #form1
+        {
+            height: 371px;
+            width: 1355px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="Header">
+     <div id="div1" class="divForText">
+       <a href="Index.aspx"> <asp:Image ID="Image2" runat="server" Height="113px" 
+            ImageUrl="~/Images/Logo.png" style="margin-left:50px; margin-top:50px" Width="137px" />
+       </a>
+    </div>
+    </div>
+    <asp:Image ID="Image1" runat="server" Height="386px" 
+        ImageUrl="~/Images/DocSlide1.jpg" Width="1326px" BorderColor="#3399FF" 
+        BorderStyle="Outset" style="margin-left:7px"/>
+        <div><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+    </asp:ContentPlaceHolder></div>
+     <div class="footer">
+     <center>
+        <a href="Aboutus.aspx">About Us</a> &nbsp;<a href="Contact_Us.aspx">Contact Us</a>
+     </center>  
+     </div>
+    </form>
+</body>
+</html>
